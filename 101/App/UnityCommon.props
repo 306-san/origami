@@ -1,0 +1,10 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <UnityInstallationDir>C:\Program Files\Unity5_5_2\Editor\</UnityInstallationDir>
+        <UnityWSASolutionName>Origami</UnityWSASolutionName>
+        <UnityWSASolutionDir>C:\Users\Takumu\Documents\HolographicAcademy-Holograms-101\HolographicAcademy-Holograms-101\Origami\App\</UnityWSASolutionDir>
+        <UnityWSAPlayerDir>C:\Program Files\Unity5_5_2\Editor\Data\PlaybackEngines\MetroSupport\</UnityWSAPlayerDir>
+        <UnityWSAToolsDir>$(UnityWSASolutionDir)Unity\Tools\</UnityWSAToolsDir>
+        <UnityProjectDir>C:\Users\Takumu\Documents\HolographicAcademy-Holograms-101\HolographicAcademy-Holograms-101\Origami\</UnityProjectDir>
+    </PropertyGroup>
+</Project>
