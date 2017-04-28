@@ -41,23 +41,23 @@ namespace Academy.HoloToolkit.Unity
             if (GazeManager.Instance.Hit)
             {
                 // 2.b: SetActive true the CursorOnHolograms to show cursor.
-
+                CursorOnHolograms.SetActive(true);
                 // 2.b: SetActive false the CursorOffHolograms hide cursor.
-
+                CursorOffHolograms.SetActive(false);
             }
             else
             {
                 // 2.b: SetActive true CursorOffHolograms to show cursor.
-
+                CursorOffHolograms.SetActive(true);
                 // 2.b: SetActive false CursorOnHolograms to hide cursor.
-
+                CursorOnHolograms.SetActive(true);
             }
 
             // 2.b: Assign gameObject's transform position equals GazeManager's instance Position.
-
+            gameObject.transform.position = GazeManager.Instance.Position;
 
             // 2.b: Assign gameObject's transform up vector equals GazeManager's instance Normal.
-
+            gameObject.transform.up = GazeManager.Instance.Normal;
         }
     }
 }
