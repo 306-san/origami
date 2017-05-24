@@ -79,6 +79,6 @@ public class Interactible : MonoBehaviour
 
         /* TODO: DEVELOPER CODING EXERCISE 6.a */
         // 6.a: Handle the OnSelect by sending a PerformTagAlong message.
-        this.SendMessage("PerformTagAlong");
+        SendMessage("PerformTagAlong");
     }
 }
