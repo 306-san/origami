@@ -259,6 +259,8 @@ GameObject:
   - component: {fileID: 1044605505}
   - component: {fileID: 1044605503}
   - component: {fileID: 1044605506}
+  - component: {fileID: 1044605507}
+  - component: {fileID: 1044605508}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -346,6 +348,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FingerPressedSound: {fileID: 8300000, guid: 9c0ace72966b7234b9d9f946da8b666d, type: 3}
+--- !u!114 &1044605507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1044605500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53614684e0d048540a66dace078dd492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HandGuidanceIndicator: {fileID: 1000011496978826, guid: 49554dd136b503241a642f28b940de68,
+    type: 2}
+  IndicatorParent: {fileID: 1874653313}
+  HandGuidanceThreshold: 0.5
+--- !u!114 &1044605508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1044605500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a333841e009c6a448b8a9b88ba8c7f39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1221385398
 Prefab:
   m_ObjectHideFlags: 0
@@ -591,5 +619,6 @@ MonoBehaviour:
     type: 2}
   ScrollDetectedAsset: {fileID: 1000013907852546, guid: d12aabe4460598a40a9fb8ea20371382,
     type: 2}
-  PathingDetectedAsset: {fileID: 0}
+  PathingDetectedAsset: {fileID: 1000012994708280, guid: 9be60755951057440a2bf0a68bb9e6ef,
+    type: 2}
   FeedbackParent: {fileID: 1874653313}
