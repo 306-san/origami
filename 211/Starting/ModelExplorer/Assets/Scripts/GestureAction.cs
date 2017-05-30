@@ -29,10 +29,10 @@ public class GestureAction : MonoBehaviour
 
             // 2.c: Calculate rotationFactor based on GestureManager's NavigationPosition.X and multiply by RotationSensitivity.
             // This will help control the amount of rotation.
-
+            rotationFactor = GestureManager.Instance.NavigationPosition.x * RotationSensitivity;
 
             // 2.c: transform.Rotate along the Y axis using rotationFactor.
-
+            transform.Rotate(new Vector3(0, -1 * rotationFactor, 0));
         }
     }
 

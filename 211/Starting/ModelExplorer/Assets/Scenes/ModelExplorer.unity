@@ -1,15 +1,15 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!29 &1
-SceneSettings:
+OcclusionCullingSettings:
   m_ObjectHideFlags: 0
-  m_PVSData: 
-  m_PVSObjectsArray: []
-  m_PVSPortalsArray: []
+  serializedVersion: 2
   m_OcclusionBakeSettings:
     smallestOccluder: 5
     smallestHole: 0.25
     backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.30711442, g: 0.2943786, b: 0.24407867, a: 1}
+  m_IndirectSpecularColor: {r: 0.3067897, g: 0.2941377, b: 0.24400929, a: 1}
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -79,16 +79,17 @@ NavMeshSettings:
   m_ObjectHideFlags: 0
   m_BuildSettings:
     serializedVersion: 2
+    agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
     agentSlope: 45
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
-    accuratePlacement: 0
     minRegionArea: 2
-    cellSize: 0.16666667
     manualCellSize: 0
+    cellSize: 0.16666667
+    accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1001 &105551588
 Prefab:
@@ -191,6 +192,18 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 154460, guid: db5d50d60b0863341be4ce64455775a8, type: 2}
   m_PrefabInternal: {fileID: 150882246}
+--- !u!114 &235072808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 235072803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 620d0af99a37487449bed787b0b9c231, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotationSensitivity: 10
 --- !u!1001 &561344824
 Prefab:
   m_ObjectHideFlags: 0
@@ -238,13 +251,14 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1044605504}
-  - 114: {fileID: 1044605502}
-  - 114: {fileID: 1044605501}
-  - 114: {fileID: 1044605505}
-  - 114: {fileID: 1044605503}
+  - component: {fileID: 1044605504}
+  - component: {fileID: 1044605502}
+  - component: {fileID: 1044605501}
+  - component: {fileID: 1044605505}
+  - component: {fileID: 1044605503}
+  - component: {fileID: 1044605506}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -320,6 +334,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e59a5cedf2abe0349980e8d38fe29455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1044605506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1044605500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6af9fcc3a260d43b5541e1cb970480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FingerPressedSound: {fileID: 8300000, guid: 9c0ace72966b7234b9d9f946da8b666d, type: 3}
 --- !u!1001 &1221385398
 Prefab:
   m_ObjectHideFlags: 0
@@ -358,6 +384,10 @@ Prefab:
     - target: {fileID: 401514, guid: 1c64dcdb3dd75464794d8eb62b657a18, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8219946, guid: 1c64dcdb3dd75464794d8eb62b657a18, type: 2}
+      propertyPath: spreadCustomCurve.m_RotationOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c64dcdb3dd75464794d8eb62b657a18, type: 2}
@@ -496,6 +526,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 27bdbc251483ef547b6193bb312653e8, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1874653313 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 183460, guid: dcfff29e15ef0304dbfabcb30a37ad97, type: 2}
+  m_PrefabInternal: {fileID: 2030258809}
 --- !u!1001 &2030258809
 Prefab:
   m_ObjectHideFlags: 0
@@ -542,3 +576,20 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 196258, guid: dcfff29e15ef0304dbfabcb30a37ad97, type: 2}
   m_PrefabInternal: {fileID: 2030258809}
+--- !u!114 &2088344743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2088344740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ec360d69bdd8c44ba00a5a1efb97a87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HandDetectedAsset: {fileID: 1000013579737340, guid: 8557f916d161c554f9b5a62e90ca1a94,
+    type: 2}
+  ScrollDetectedAsset: {fileID: 1000013907852546, guid: d12aabe4460598a40a9fb8ea20371382,
+    type: 2}
+  PathingDetectedAsset: {fileID: 0}
+  FeedbackParent: {fileID: 1874653313}

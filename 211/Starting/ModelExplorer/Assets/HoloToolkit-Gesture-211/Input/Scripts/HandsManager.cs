@@ -34,13 +34,13 @@ namespace Academy.HoloToolkit.Unity
             /* TODO: DEVELOPER CODE ALONG 2.a */
 
             // 2.a: Register for SourceManager.SourcePressed event.
-            //InteractionManager.SourcePressed += InteractionManager_SourcePressed;
+            InteractionManager.SourcePressed += InteractionManager_SourcePressed;
 
             // 2.a: Register for SourceManager.SourceReleased event.
-            //InteractionManager.SourceReleased += InteractionManager_SourceReleased;
+            InteractionManager.SourceReleased += InteractionManager_SourceReleased;
 
             // 2.a: Initialize FocusedGameObject as null.
-            //FocusedGameObject = null;
+            FocusedGameObject = null;
         }
 
         private void EnableAudioHapticFeedback()
@@ -71,7 +71,7 @@ namespace Academy.HoloToolkit.Unity
             HandDetected = false;
 
             // 2.a: Reset FocusedGameObject.
-            //ResetFocusedGameObject();
+            ResetFocusedGameObject();
         }
 
         private void InteractionManager_SourcePressed(InteractionSourceState hand)
@@ -87,24 +87,24 @@ namespace Academy.HoloToolkit.Unity
                 }
 
                 // 2.a: Cache InteractibleManager's FocusedGameObject in FocusedGameObject.
-                //FocusedGameObject = InteractibleManager.Instance.FocusedGameObject;
+                FocusedGameObject = InteractibleManager.Instance.FocusedGameObject;
             }
         }
 
         private void InteractionManager_SourceReleased(InteractionSourceState hand)
         {
             // 2.a: Reset FocusedGameObject.
-            //ResetFocusedGameObject();
+            ResetFocusedGameObject();
         }
 
         private void ResetFocusedGameObject()
         {
             // 2.a: Set FocusedGameObject to be null.
-            //FocusedGameObject = null;
+            FocusedGameObject = null;
 
             // 2.a: On GestureManager call ResetGestureRecognizers
             // to complete any currently active gestures.
-            //GestureManager.Instance.ResetGestureRecognizers();
+            GestureManager.Instance.ResetGestureRecognizers();
         }
 
         void OnDestroy()
@@ -113,10 +113,10 @@ namespace Academy.HoloToolkit.Unity
             InteractionManager.SourceLost -= InteractionManager_SourceLost;
 
             // 2.a: Unregister the SourceManager.SourceReleased event.
-            //InteractionManager.SourceReleased -= InteractionManager_SourceReleased;
+            InteractionManager.SourceReleased -= InteractionManager_SourceReleased;
 
             // 2.a: Unregister for SourceManager.SourcePressed event.
-            //InteractionManager.SourcePressed -= InteractionManager_SourcePressed;
+            InteractionManager.SourcePressed -= InteractionManager_SourcePressed;
         }
     }
 }
