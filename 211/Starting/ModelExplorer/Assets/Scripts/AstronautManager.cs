@@ -27,10 +27,10 @@ public class AstronautManager : Singleton<AstronautManager>
         /* TODO: DEVELOPER CODING EXERCISE 5.a */
 
         // 5.a: Add keyword Expand Model to call the ExpandModelCommand function.
-
+        keywordCollection.Add("Expand Model", ExpandModelCommand);
 
         // 5.a: Add keyword Reset Model to call the ResetModelCommand function.
-
+        keywordCollection.Add("Reset Model", ResetModelCommand);
 
         // Initialize KeywordRecognizer with the previously added keywords.
         keywordRecognizer = new KeywordRecognizer(keywordCollection.Keys.ToArray());
