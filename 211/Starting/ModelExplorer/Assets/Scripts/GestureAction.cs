@@ -49,12 +49,12 @@ public class GestureAction : MonoBehaviour
 
             Vector3 moveVector = Vector3.zero;
             // 4.a: Calculate the moveVector as position - manipulationPreviousPosition.
-
+            moveVector = position - manipulationPreviousPosition;
             // 4.a: Update the manipulationPreviousPosition with the current position.
-
+            manipulationPreviousPosition = position;
 
             // 4.a: Increment this transform's position by the moveVector.
-
+            transform.position += moveVector;
         }
     }
 }

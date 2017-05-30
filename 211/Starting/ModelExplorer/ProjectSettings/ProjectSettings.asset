@@ -554,9 +554,9 @@ PlayerSettings:
     ErrorHub: 0
     Hub: 0
     Purchasing: 0
-    UNet: 0
+    UNet: 1
     Unity_Ads: 0
-  cloudProjectId: 
-  projectName: 
-  organizationId: 
+  cloudProjectId: 6b26f503-57a3-4965-a5d9-ce07e541f925
+  projectName: ModelExplorer (1)
+  organizationId: takumu-ito
   cloudEnabled: 0
