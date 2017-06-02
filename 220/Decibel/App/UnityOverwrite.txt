@@ -5,10 +5,10 @@
 # Write a line equal to 'overwrite-all' (without quotes) to overwrite everything (preserved accross builds)
 # Write a line equal to 'keep-all' (without quotes) to keep files regardless their modification (preserved accross builds)
 # Default behavior is to never overwrite files
-Decibel.sln: F9A0F856CF0A8C3A9CB04B8A080A3889
+Decibel.sln: modified
 Decibel\App.cs: 348D9BEFE6732AF5240C90BBCA481BD1
-Decibel\Decibel.csproj: 3268B0506C888B08B4C21B13CBC41DCD
-Decibel\Decibel.csproj.user: BEFB8AC4886C4CFDD3C68445D6F19B04
+Decibel\Decibel.csproj: 924B85EB74F8F68170A3ABC575676652
+Decibel\Decibel.csproj.user: modified
 Decibel\Package.appxmanifest: A5159DFB5D23CB01F618936E3D93BA97
 Decibel\project.json: 1D02BC64BAC0D041019673A1C4C51737
 Decibel\Assets\SplashScreen.scale-200.png: 60618416282ED104FD1473935716045D
@@ -17,6 +17,13 @@ Decibel\Assets\Square44x44Logo.scale-200.png: 6C6EF27184ABE9D870A9D564953775DE
 Decibel\Assets\Square44x44Logo.targetsize-24_altform-unplated.png: 156637F7B5363E983E7A46D8E533A23D
 Decibel\Assets\StoreLogo.png: 90BD194CA4A7CFFF3E8B8222229857FB
 Decibel\Assets\Wide310x150Logo.scale-200.png: C96846A80DF667F87355569CD816192D
+Decibel\bin\x86\Release\AppX\Assets\SplashScreen.scale-200.png: 60618416282ED104FD1473935716045D
+Decibel\bin\x86\Release\AppX\Assets\Square150x150Logo.scale-200.png: E02834B4A5DFB97FF8E212C1CACBB084
+Decibel\bin\x86\Release\AppX\Assets\Square44x44Logo.scale-200.png: 6C6EF27184ABE9D870A9D564953775DE
+Decibel\bin\x86\Release\AppX\Assets\Square44x44Logo.targetsize-24_altform-unplated.png: 156637F7B5363E983E7A46D8E533A23D
+Decibel\bin\x86\Release\AppX\Assets\StoreLogo.png: 90BD194CA4A7CFFF3E8B8222229857FB
+Decibel\bin\x86\Release\AppX\Assets\Wide310x150Logo.scale-200.png: C96846A80DF667F87355569CD816192D
+Decibel\bin\x86\Release\AppX\Properties\Default.rd.xml: 72EB282657164E79A1C42F6240984826
 Decibel\Properties\AssemblyInfo.cs: 10F1B2CFBAA4ED531CF639D722438DE0
 Decibel\Properties\Default.rd.xml: 72EB282657164E79A1C42F6240984826
 GeneratedProjects\UWP\Assembly-CSharp\project.json: 4FCF72A4D5EDB37E24C206A7BCFE7AF1

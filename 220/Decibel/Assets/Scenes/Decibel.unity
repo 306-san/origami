@@ -486,6 +486,22 @@ Prefab:
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 82846982791360234, guid: 8b208d375c6fda543b309f99efaf76aa,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 15ca48c2f2733184fa33befdc2d49ade, type: 3}
+    - target: {fileID: 82846982791360234, guid: 8b208d375c6fda543b309f99efaf76aa,
+        type: 2}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 243000010338419354, guid: 0152640d43b66c341b6aab5beeb300fb,
+        type: 2}
+    - target: {fileID: 82846982791360234, guid: 8b208d375c6fda543b309f99efaf76aa,
+        type: 2}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8b208d375c6fda543b309f99efaf76aa, type: 2}
   m_IsPrefabParent: 0
@@ -508,6 +524,7 @@ GameObject:
   - component: {fileID: 1666535175}
   - component: {fileID: 1666535178}
   - component: {fileID: 1666535180}
+  - component: {fileID: 1666535179}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -583,13 +600,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cef26a362f41c5248aca879be2a5f04b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1666535179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1666535173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca92a225e2942184b82df38fed2d2eb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1666535180
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1666535173}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f2795b3e072e1745a4f8c670d64284f, type: 3}
   m_Name: 
@@ -638,7 +666,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1480791052}
-          m_MethodName: 
+          m_MethodName: OnSelect
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -686,6 +714,25 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
+--- !u!1 &1818518002 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 171268, guid: 286fb40bc02be9944850ac0c01150a16, type: 2}
+  m_PrefabInternal: {fileID: 2073913838}
+--- !u!114 &1818518004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1818518002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae1759d0c987f0446a0e4d25bd3f845c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NavigationStartedClip: {fileID: 8300000, guid: dbc4e792c6410bc4e8a4c92e15c28792,
+    type: 3}
+  NavigationUpdatedClip: {fileID: 8300000, guid: dbc4e792c6410bc4e8a4c92e15c28792,
+    type: 3}
 --- !u!1001 &1878331977
 Prefab:
   m_ObjectHideFlags: 0
