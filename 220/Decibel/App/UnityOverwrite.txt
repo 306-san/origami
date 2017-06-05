@@ -7,7 +7,7 @@
 # Default behavior is to never overwrite files
 Decibel.sln: modified
 Decibel\App.cs: 348D9BEFE6732AF5240C90BBCA481BD1
-Decibel\Decibel.csproj: C94C502AC3AA93A80AD2129BDC392EC1
+Decibel\Decibel.csproj: 28797228E958A90989C3D9F3FB6FB681
 Decibel\Decibel.csproj.user: modified
 Decibel\Package.appxmanifest: A5159DFB5D23CB01F618936E3D93BA97
 Decibel\project.json: 1D02BC64BAC0D041019673A1C4C51737
