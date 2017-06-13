@@ -10,7 +10,7 @@ GeneratedProjects\UWP\Assembly-CSharp\project.json: 4FCF72A4D5EDB37E24C206A7BCFE
 GeneratedProjects\UWP\Assembly-CSharp-firstpass\project.json: 4FCF72A4D5EDB37E24C206A7BCFE7AF1
 Planetarium\App.cs: 6F6594ED5FE689B0E8568D2B7E4CCF26
 Planetarium\Package.appxmanifest: B991DACA731818388C473325731BDAA9
-Planetarium\Planetarium.csproj: F1C2E9CD4A3D637B38E4C76C1AC751BA
+Planetarium\Planetarium.csproj: 07C1D84EC0730DDD52EC5DE23F58FE33
 Planetarium\Planetarium.csproj.user: modified
 Planetarium\project.json: 1D02BC64BAC0D041019673A1C4C51737
 Planetarium\Assets\SplashScreen.scale-200.png: 60618416282ED104FD1473935716045D
