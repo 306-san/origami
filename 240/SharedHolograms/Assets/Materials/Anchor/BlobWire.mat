@@ -75,5 +75,5 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 0.71034503, b: 1, a: 0.447}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Offset: {r: 0.1769171, g: 0.0088458555, b: 0, a: 0}
+    - _Offset: {r: 0.46704158, g: 0.02335208, b: 0, a: 0}
     - _WireColor: {r: 0, g: 0.75172424, b: 1, a: 0.828}

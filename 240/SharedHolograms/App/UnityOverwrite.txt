@@ -11,7 +11,7 @@ GeneratedProjects\UWP\Assembly-CSharp-firstpass\project.json: 4FCF72A4D5EDB37E24
 SharedHolograms\App.cs: C87B2766E9D1D08CB976FA1E1B4B4FF6
 SharedHolograms\Package.appxmanifest: 796A29AC7EC9039F0FF6E86627E7DDAB
 SharedHolograms\project.json: 1D02BC64BAC0D041019673A1C4C51737
-SharedHolograms\SharedHolograms.csproj: 3889DCEB70BA904F57D9954FC7D341EE
+SharedHolograms\SharedHolograms.csproj: 5A8423A3DD04DE82126FEDA26541ED7E
 SharedHolograms\SharedHolograms.csproj.user: modified
 SharedHolograms\Assets\SplashScreen.scale-200.png: 60618416282ED104FD1473935716045D
 SharedHolograms\Assets\Square150x150Logo.scale-200.png: E02834B4A5DFB97FF8E212C1CACBB084
